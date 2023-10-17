@@ -7,11 +7,7 @@ ix.command.Add("Roll", {
 	description = "@cmdRoll",
 	OnRun = function(self, client)
 		local value = math.random(0, 100)
-
-		ix.chat.Send(client, "roll", tostring(value), nil, nil, {
-			max = maximum
-		})
-
+		ix.chat.Send(client, "roll", tostring(value), nil, nil, {})
 		ix.log.Add(client, "roll", value)
 	end
 })
